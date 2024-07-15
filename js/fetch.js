@@ -20,9 +20,6 @@ function renderJoke(joke) {
 }
 
 async function getJoke() {
-  // wait until 3000ms are passed
-  while (passedTime() < 3000) {}
-
   const response = await fetch(
     "https://example-apis.vercel.app/api/bad-jokes/3"
   );
